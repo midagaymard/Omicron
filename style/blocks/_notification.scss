@@ -1,0 +1,46 @@
+.notification-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: var(--color-dark);
+  z-index: 999;
+  height: 38px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.notification-content {
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+.closebtn {
+  color: #aaa;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closebtn:hover, .closebtn:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+.notification-description {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-base),sans-serif;
+  @include fluid-text(14,12);
+  padding-top: 14px;
+  justify-content: center;
+  color: var(--color-light);
+}

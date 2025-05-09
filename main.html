@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Омикрон</title>
+</head>
+<body>
+<div id="preloader" class="container">
+    <h2 class="preloader__title animate__animated animate__fadeInDown ">ОМИКРОН</h2>
+    <button class="preloader__button button animate__animated animate__fadeInUp">
+        Начать
+    </button>
+</div>
+<div class="notification-container">
+    <div class="notification-content">
+        <span class="closebtn">×</span>
+        <div class="notification-description">
+           Пункт меню "О нас" обязателен к прочтению
+        </div>
+    </div>
+</div>
+<header class="header">
+    <section class="navigation container">
+            <a href="#" class="navigation__logo">
+                О
+            </a>
+        <button class="navigation__button button" onclick="Overlay.showModal()">
+            <span class="visually-hidden">Open navigation menu</span>
+        </button>
+    </section>
+    <section class="hero container">
+
+    </section>
+</header>
+
+<main class="main">
+    <section class="omicron-heading">
+        <h1 class="omicron-heading__title">
+            ОМИКРОН
+            <span class="omicron-heading__slogan">
+                проверь свое ментальное здоровье
+            </span>
+        </h1>
+    </section>
+
+    <section class="test-list">
+        <h2 class="test-list__title">Наши тесты</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img
+                                src="./images/eye.png"
+                                alt="Eye"
+                                class="grid__image"
+                        />
+                    </div>
+                    <div class="card-back">
+                        <span class="grid__title">Тест на моральное состояние</span>
+                        <a href="./morale.html" class="grid__link">Начать тестирование</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img
+                                src="./images/eye.png"
+                                alt="Eye"
+                                class="grid__image"
+                        />
+                    </div>
+                    <div class="card-back">
+                        <span class="grid__title">Тест</span>
+                        <a href="#" class="grid__link">Скоро...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img
+                                src="./images/eye.png"
+                                alt="Eye"
+                                class="grid__image"
+                        />
+                    </div>
+                    <div class="card-back">
+                        <span class="grid__title">Тест</span>
+                        <a href="#" class="grid__link">Скоро...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<dialog class="overlay" id="Overlay">
+    <form class="close-button-wrapper" method="dialog">
+        <button
+                class="overlay__close-button cross-button"
+                type="submit"
+        >
+            <span class="visually-hidden">Close navigation menu</span>
+        </button>
+    </form>
+    <div class="overlay__body">
+        <ul class="overlay__list">
+            <li class="overlay__item">
+                <a href="https://www.donationalerts.com/r/midagaymard" target="_blank" class="overlay__link">Поддержать проект</a>
+            </li>
+            <li class="overlay__item">
+                <a href="https://t.me/midagaymard" target="_blank" class="overlay__link">Обратная связь</a>
+            </li>
+            <li class="overlay__item">
+                <a href="https://t.me/litteraomicron/3" target="_blank" class="overlay__link">О нас</a>
+            </li>
+        </ul>
+    </div>
+</dialog>
+<script src="./wow.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.come-back {
+  display: inline-flex;
+  padding: 10px;
+  width: fit-content;
+
+  &__button {
+    @include square(32px)
+  }
+}

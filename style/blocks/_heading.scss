@@ -1,0 +1,47 @@
+.main {
+  @include flex-center(false);
+  padding-block: 40px;
+  flex-direction: column;
+}
+
+.omicron-heading {
+  @include flex-center(false);
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-light);
+  padding-block: 100px;
+  &__title {
+    @include flex-center(false);
+    flex-direction: column;
+    line-height: 1;
+    background: -webkit-linear-gradient(90deg, #00F260, #0575E6);
+    background: linear-gradient(90deg, #00F260, #0575E6);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    animation: gradientText 5s ease-in-out infinite;
+  }
+  &__slogan  {
+    @include fluid-text(50,18);
+    font-weight: 400;
+    text-wrap: wrap;
+    @include mobile {
+      padding-inline: 10px;
+      text-align: center;
+    }
+    font-family: var(--font-family-accent),sans-serif;
+  }
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+}

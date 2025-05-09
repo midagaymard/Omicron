@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Тест на моральное состояние</title>
+</head>
+<body>
+    <div class="come-back animate__fadeIn animate__animated">
+        <a class="come-back__button" href="./main.html">
+            <img
+                    src="./images/ArrowLeftSquareFill.svg"
+                    alt=""
+                    width="32" height="32"
+            />
+        </a>
+
+    </div>
+
+    <div class="quiz animate__fadeIn animate__animated" id="quiz">
+        <div class="quiz__container">
+            <div class="quiz__header" id="quizHeader">
+                <h4 class="quiz__heading">Загрузка вопроса...</h4>
+            </div>
+            <ul class="quiz__list" id="quizList">
+                <li class="quiz__item">
+                    <label>
+                        <input type="radio" class="answer"  name="answer">
+                        <span class="quiz__answer">Ответ...</span>
+                    </label>
+                </li>
+                <li class="quiz__item">
+                    <label>
+                        <input type="radio" class="answer" name="answer">
+                        <span class="quiz__answer">Ответ...</span>
+                    </label>
+                </li>
+            </ul>
+            <button class="quiz__button button" id="quizSubmit">Далее</button>
+        </div>
+    </div>
+<script src="./questions.js"></script>
+</body>
+</html>
